@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="todo2.css">
+    <script src="todo2.js"></script>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="todo-button">
+            <button class="add-new" onclick="openModal()">Add new todo</button>
+            
+        </div>
+
+        <div id="todo-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Todo list</h2>
+                <div class="todo-header">
+                    <input type="text" class="todoInputModal" placeholder="new todo name">
+                    <input type="date" class="tododateModal">
+                    <button class="addTodo" onclick="addTodoFromModal()">Add</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="todo-files">
+            <div class="todo-upcoming">
+                <h3>Upcoming todo</h3>
+                
+            </div>
+            <div class="todo-completed">
+                <h3>Completed todo</h3>
+            </div>    
+
+        </div>
+        <div class="todo-files1">
+            <div class="lists_todo">
+                <div id="upcoming-list"></div>
+            </div>
+            <div class="todo-completed">
+                <div id="completed-list"></div>
+            </div>
+        </div>
+
+        <button class="delete-selected" onclick="deleteSelectedTodos()">Delete Selected</button>
+        <button class="finished-selected" onclick="finishSelectedTodos()">Finished</button>
+    
+    </div>
+
+
+    
+</body>
+</html>
